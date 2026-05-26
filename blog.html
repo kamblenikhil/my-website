@@ -9,20 +9,27 @@
     </head>
     <body>
         <div class="container">
-            <nav>
-                <a href="/" class="name-link">
-                    <b>Nikhil Kamble</b>
-                </a>
-                |&nbsp;&nbsp;&nbsp;
-                <a href="blog.html"><u>Blog</u></a>
-                <a href="me.html"><u>Me</u></a>
-                <a href="https://linkedin.com/in/kamblenikhil" target="_blank" rel="noopener"><u>LinkedIn</u></a>
-                <a href="https://github.com/kamblenikhil" target="_blank" rel="noopener"><u>GitHub</u></a>
-                <a href="https://x.com/itsnikhilkamble" target="_blank" rel="noopener"><u>X</u></a>
-            </nav>
+            <div id="nav-placeholder"></div>
+            <script>
+                fetch('nav.html').then(r => r.text()).then(html => {
+                    document.getElementById('nav-placeholder').innerHTML = html;
+                });
+            </script>
 
-        
+            <p>
+                <div class="substack-post-embed">
+                    <p lang="en">I wired my Flipper Zero to Home Assistant— here's everything that went wrong by Nikhil</p>
+                    <p>A Flipper Zero encrypts commands and blasts them at 433 MHz. An ESP32 receives, decrypts, and checks for replay attacks — then fires Home Assistant automations via MQTT. Fully local, no cloud, no app.</p>
+                    <a data-post-link href="https://nikhilkamble.substack.com/p/flipper-home-automation">Read on Substack</a>
+                </div>
+                <script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+            </p>
 
         </div>
+        
+        <!-- <div class="markdeepFooter">
+          <i>formatted by <a href="https://casual-effects.com/markdeep" style="color:#999">Markdeep&nbsp;1.17&nbsp;&nbsp;</a></i>
+          <div style="display:inline-block;font-size:13px;font-family:'Times New Roman',serif;vertical-align:middle;transform:translate(-3px,-1px)rotate(135deg);">✒</div>
+        </div> -->
     </body>
 </html>

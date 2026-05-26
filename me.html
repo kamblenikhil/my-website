@@ -9,64 +9,74 @@
     </head>
     <body>
         <div class="container">
-            <nav>
-                <a href="/" class="name-link">
-                    <b>Nikhil Kamble</b>
-                </a>
-                |&nbsp;&nbsp;&nbsp;
-                <a href="blog.html"><u>Blog</u></a>
-                <a href="me.html"><u>Me</u></a>
-                <a href="https://linkedin.com/in/kamblenikhil" target="_blank" rel="noopener"><u>LinkedIn</u></a>
-                <a href="https://github.com/kamblenikhil" target="_blank" rel="noopener"><u>GitHub</u></a>
-                <a href="https://x.com/itsnikhilkamble" target="_blank" rel="noopener"><u>X</u></a>
-            </nav>
+            <div id="nav-placeholder"></div>
+            <script>
+                fetch('nav.html').then(r => r.text()).then(html => {
+                    document.getElementById('nav-placeholder').innerHTML = html;
+                });
+            </script>
 
             <b>My Tech Journey:</b>
             
             <p>From a young age, I was fascinated by technology. 
-                I was captivated by an old typewriter my grandfather used in his typewriting business. 
-                Growing up in a family of engineers—my dad and two older siblings—immersed me in science and tech. 
-                This environment shaped my future and fueled my passion for technology.</p>
+                It started with an old typewriter my grandfather used in his typewriting business — 
+                I was captivated by the machine, the keys, the act of turning thought into print. 
+                Growing up in a family of engineers — my father and two older siblings — 
+                immersed me in science and tech from the start. 
+                That environment shaped who I'd become and fueled a passion I've never lost.</p>
             
-            <p>Although technology was my primary focus, I explored other passions. 
-                I was part of a music band, singing and playing guitar at various events/competitions, and nurtured a love for poetry and songwriting. 
-                Photography, sparked by a documentary about a NatGeo photographer, became another outlet. 
-                I even worked on post-production editing for two short films during college. 
-                Tennis, is another new thing I'm starting to explore.</p>
+            <p>Although technology was my primary focus, but never my only one. 
+                I sang and played guitar in a band, performing at events and competitions, and nurtured a love for poetry and songwriting. 
+                Photography became another outlet after a documentary about a National Geographic photographer caught my imagination, 
+                and I spent time on post-production editing for two short films during college. 
+                More recently, I've started exploring piano and tennis — proof that I'm still chasing new things.</p>
             
-            <p>At 12, I came across my sister's C and Java books, which marked the beginning of my journey into the world of computers. 
-                The iPhone launch in 2007 further fueled my interest in technology. 
-                That year, I wrote my first code—“Hello World” in Turbo C—and knew what I wanted to do for the rest of my life. 
-                I pursued a diploma after high school, followed by a degree in computer science.</p>
+            <p>At 12, I came across my sister's C and Java books, and that was the beginning of my journey into computers. 
+                The iPhone launch in 2007 only deepened the obsession. 
+                That same year, I wrote my first program — “Hello World” in Turbo C — and somehow knew, even then 
+                what I wanted to do for the rest of my life. 
+                I pursued a diploma after high school, followed by my undergraduate degree in computer science.</p>
             
-            <p>Beyond technology, I was deeply committed to personal growth and giving back. 
+            <p>Beyond technology, I've always cared deeply about personal growth and giving back. 
                 I volunteered with the 
                 <a href="https://artofliving.org" target="_blank" rel="noopener"><u>Art of Living</u></a>
-                Foundation, organizing yoga and meditation workshops in rural India. 
-                I continued online volunteering during the 2020 pandemic, offering wellness, leadership and personality development sessions to diverse communities. 
-                This has been a rewarding experience that has allowed me to make a positive impact in the lives of others.</p>
+                Foundation, organizing yoga and meditation workshops across rural India. 
+                When the 2020 pandemic hit, I moved that work online — running wellness, leadership, and personality-development sessions for communities around the world. 
+                Few things have been as rewarding as watching that work land in someone else's life.</p>
             
-            <p>In my final year of undergrad, I participated in a hackathon with over 100+ participants, followed by interviews, and landed my first internship at 
+            <p>In my final year of undergrad, I competed in a hackathon with 100+ participants, which led to a round of interviews and my first internship at 
                 <a href="https://www.bmc.com" target="_blank" rel="noopener"><u>BMC Software</u></a>. 
-                During my time at BMC, I worked with real-time massive amount of data to develop an AI chatbot orchestrator for their internal digital workplace. 
-                This exposure to the business side of tech was invaluable and solidified my desire to dive deeper into the field.</p>
+                There I joined the team building BMC Helix Virtual Agent — an AI chatbot for BMC's internal digital workplace — during its pilot phase. 
+                I built a Java orchestration service that took employee requests understood through Google Dialogflow 
+                and routed them to the right system behind the scenes: 
+                booking time off through the HR tool, raising an IT ticket, even ordering a cab through a transport partner. 
+                It was my first real taste of shipping a product toward production, and it made me want to go deeper.</p>
             
-            <p>Afterward, I moved to US to pursue my Master's in Computer Science at 
+            <p>That pull led me to the US, where I earned my Master's in Computer Science at
                 <a href="https://bloomington.iu.edu" target="_blank" rel="noopener"><u>Indiana University Bloomington</u></a>. 
-                Studying under top-tier professors and competing with some of the brightest minds, I felt I was preparing myself for the next big leap in my career.</p>
+                Studying under exceptional professors and alongside genuinely sharp people, I felt myself getting ready for the next leap.</p>
             
-            <p>This preparation led me to my current role as a Software Engineer at 
-                <a href="https://theraleyscompanies.com" target="_blank" rel="noopener"><u>The Raley's Companies</u></a>, 
-                where I work on technology solutions for a network of over 500+ grocery stores for multiple brands -
+            <p>That leap was <a href="https://theraleyscompanies.com" target="_blank" rel="noopener"><u>The Raley's Companies</u></a>, 
+                where I started as an intern and grew into a full-time Software Engineer. 
+                As an intern, I built a full-stack in-store routing system for online order pickers — 
+                a pilot that used a modified Dijkstra's algorithm to find the shortest path through a store's aisles. 
+                That work turned into a full-time career building backend systems across two very different worlds: a brick-and-mortar grocery network —  
                     <a href="https://www.raleys.com" target="_blank" rel="noopener"><u>Raley's</u></a>, 
                     <a href="https://www.raleys.com" target="_blank" rel="noopener"><u></u>NobHill</u></a>, 
                     <a href="https://www.raleys.com" target="_blank" rel="noopener"><u>Belair</u></a>, 
                     <a href="https://www.bashas.com" target="_blank" rel="noopener"><u>Basha's</u></a>, 
-                    <a href="https://www.ajsfinefoods.com" target="_blank" rel="noopener"><u>AJ's</u></a>, 
-                    <a href="https://myfoodcity.com" target="_blank" rel="noopener"><u>FoodCity</u></a> including subscription service by 
-                    <a href="https://www.farmfreshtoyou.com" target="_blank" rel="noopener"><u>Farm Fresh To You</u></a>, 
-                    <a href="https://www.fullcircle.com" target="_blank" rel="noopener"><u></u>Fullcircle</u></a>.
+                    <a href="https://www.ajsfinefoods.com" target="_blank" rel="noopener"><u>AJ's</u></a>,
+                    <a href="https://myfoodcity.com" target="_blank" rel="noopener"><u>FoodCity</u></a>, spanning 235+ stores and serving millions of customers —
+                    and a farm-to-door produce-subscription business,
+                    <a href="https://www.farmfreshtoyou.com" target="_blank" rel="noopener"><u>Farm Fresh To You</u></a> and 
+                    <a href="https://www.fullcircle.com" target="_blank" rel="noopener"><u></u>Fullcircle</u></a> — that delivers the season's best straight to people's doors. 
+                Same engineer, two business models. The constant context-switching is one of the things I like most about the role.
             </p>
+
+            <p>Day to day, I work across the backbone of our eCommerce: the APIs behind product search and ordering, 
+                the Azure data pipelines feeding our loyalty and marketing platforms, 
+                the reporting infrastructure our finance and operations teams rely on, and the integrations tying payments, identity, and partners together. 
+                I'm a backend engineer at heart, but on a small team you wear a lot of hats — and I've come to love that range.</p>
 
         </div>
     </body>

@@ -63,6 +63,7 @@ h1 a:hover {
 /* Content */
 p {
   margin-bottom: 16px;
+  text-align: justify;
 }
 
 a {
